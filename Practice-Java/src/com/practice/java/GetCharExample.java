@@ -1,0 +1,23 @@
+package com.practice.java;
+
+public class GetCharExample {
+
+	public static void main(String[] args) {
+		GetCharExample.verifyGetCharExam();
+	}
+	static void verifyGetCharExam() {
+		String str = new String("This is a String Handling Tutorial");
+		char[] array = new char[6];
+		str.getChars(10, 16, array, 0);
+		System.out.println("Array Content:" );
+		for(char temp: array){
+			System.out.print(temp);
+		}
+		char[] array2 = new char[]{'a','a','a','a','a','a','a','a'};
+	       str.getChars(10, 16, array2, 2);
+	       System.out.println("Second Array Content:" );
+	       for(char temp: array2){
+	    	   System.out.print(temp);
+	       }
+	}
+}
